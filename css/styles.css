@@ -35,21 +35,16 @@ footer li a {
     color: #fff;
     margin-top: 10px;
     padding: 4px 25px;
+    box-shadow: 3px 3px 3px #0000007e;
 }
 
 .cta-footer {
     display: block;
     max-width: 130px;
     text-align: center;
-    background-color: #437F90;
+    background-color: #437f90;
     border-radius: 10px;
 }
-
-.campaign .cta-home {
-    max-width: 130px;
-}
-
-
 
 nav {
     background-color: #1f3740;
@@ -94,4 +89,21 @@ a {
     border: 0.195rem solid #1f3740;
 }
 
-.
+.campaign .cta-home {
+    max-width: 130px;
+}
+
+.super-deal {
+    background-color: #f2b05e;
+    padding: 15px 0;
+    max-width: cover;
+}
+
+.super-deal_link {
+    color: #1f3740;
+}
+
+.super-deal_link h1 {
+    margin: 0;
+    text-align: center;
+}
