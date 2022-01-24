@@ -1,0 +1,97 @@
+body {
+    font-family: "jaf-bernino-sans-narrow";
+    font-weight: 400;
+    background-color: #b6d2da;
+    color: #1f3740;
+}
+h1 {
+    font-family: "tablet-gothic-condensed";
+    font-weight: 800;
+    font-size: 3em;
+}
+
+header,
+h2 {
+    font-family: "tablet-gothic-condensed";
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header {
+    font-size: 1.75em;
+}
+
+footer li a {
+    font-family: "tablet-gothic-narrow";
+    font-weight: 600;
+    font-style: italic;
+}
+
+.cta {
+    font-family: "jaf-bernino-sans-condensed";
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 1.75em;
+    color: #fff;
+    margin-top: 10px;
+    padding: 4px 25px;
+}
+
+.cta-footer {
+    display: block;
+    max-width: 130px;
+    text-align: center;
+    background-color: #437F90;
+    border-radius: 10px;
+}
+
+.campaign .cta-home {
+    max-width: 130px;
+}
+
+
+
+nav {
+    background-color: #1f3740;
+}
+
+nav a,
+nav i,
+footer .cta {
+    color: #fff;
+}
+nav ul,
+footer ul {
+    padding: 0;
+}
+
+nav > * {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+.current {
+    color: #f2b05e;
+}
+
+/* Home*/
+
+.cta-home {
+    display: block;
+    max-width: 195px;
+    text-align: center;
+    color: #1f3740;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0.195rem solid #1f3740;
+}
+
+.
