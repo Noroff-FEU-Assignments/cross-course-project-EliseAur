@@ -3,18 +3,19 @@ body {
     font-weight: 400;
     background-color: #b6d2da;
     color: #1f3740;
+    margin: 0px;
 }
 h1 {
     font-family: "tablet-gothic-condensed";
     font-weight: 800;
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 header,
 h2 {
     font-family: "tablet-gothic-condensed";
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 header {
@@ -25,6 +26,15 @@ footer li a {
     font-family: "tablet-gothic-narrow";
     font-weight: 600;
     font-style: italic;
+}
+
+.logo {
+    max-width: 190px;
+}
+.nav-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 10px 30px;
 }
 
 .cta {
@@ -48,6 +58,11 @@ footer li a {
 
 nav {
     background-color: #1f3740;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 0;
+    padding: 5px 30px 8px 30px;
+    align-items: center;
 }
 
 nav a,
@@ -58,14 +73,20 @@ footer .cta {
 nav ul,
 footer ul {
     padding: 0;
+    margin: 0;
 }
 
-nav > * {
+/*nav > * {
     display: inline-block;
-}
+}*/
 
 nav li {
     display: inline-block;
+    margin-right: 50px;
+}
+
+nav i {
+    margin-left: 15px;
 }
 
 /* Links */
@@ -89,14 +110,74 @@ a {
     border: 0.195rem solid #1f3740;
 }
 
-.campaign .cta-home {
+.campaign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "rain adventure"
+        "super-deal super-deal";
+}
+
+.campaign__rain {
+    grid-area: rain;
+}
+.campaign__adventure {
+    grid-area: adventure;
+}
+.super-deal {
+    grid-area: super-deal;
+}
+
+.campaign__rain {
+    background-image: url("../images/home/home\ -\ 1\ -\ taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
+    background-position-x: left;
+}
+.campaign__adventure {
+    background-image: url("../images/home/home-2-ladyinsunset.jpg");
+    background-position-x: right;
+}
+
+.campaign__rain,
+.campaign__adventure {
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.campaign__adventure h1,
+.campaign__adventure h2 {
+    text-align: right;
+}
+
+.campaign__adventure h1,
+.campaign__adventure h2,
+.campaign__rain h1,
+.campaign__rain h2 {
+    line-height: 110%;
+    margin: 20px 30px;
+}
+
+.campaign__rain h2 {
+    margin-bottom: 55px;
+}
+
+.cta-campaign {
+    position: relative;
+    top: 35%;
+    grid-row: 1;
+}
+
+.cta-campaign .cta-home {
     max-width: 130px;
+    margin: auto;
 }
 
 .super-deal {
     background-color: #f2b05e;
     padding: 15px 0;
-    max-width: cover;
 }
 
 .super-deal_link {
