@@ -5,6 +5,7 @@ body {
     color: #1f3740;
     margin: 0px;
 }
+
 h1 {
     font-family: "tablet-gothic-condensed";
     font-weight: 800;
@@ -22,15 +23,10 @@ header {
     font-size: 1.75em;
 }
 
-footer li a {
-    font-family: "tablet-gothic-narrow";
-    font-weight: 600;
-    font-style: italic;
-}
-
 .logo {
     max-width: 190px;
 }
+
 .nav-top {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -38,7 +34,36 @@ footer li a {
 }
 
 .nav-top > * {
-    margin: 10px 30px;
+    margin: 10px 50px;
+}
+
+nav a,
+nav i {
+    color: #fff;
+}
+
+nav {
+    background-color: #1f3740;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 0;
+    padding: 4px 50px 7px 50px;
+    align-items: center;
+}
+
+nav ul,
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav i {
+    margin-left: 40px;
 }
 
 .cta {
@@ -46,10 +71,30 @@ footer li a {
     font-weight: 700;
     font-variant: small-caps;
     font-size: 1.75em;
+    text-align: center;
     color: #fff;
     margin-top: 10px;
     padding: 4px 25px;
     box-shadow: 3px 3px 3px #0000007e;
+}
+
+footer {
+    background-color: #e6e6e6;
+    padding: 50px 50px 50px 70px;
+    display: flex;
+}
+
+footer > * {
+    flex: 1;
+}
+
+footer li a {
+    font-family: "tablet-gothic-narrow";
+    font-weight: 600;
+    font-style: italic;
+    color: #437f90;
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
 .cta-footer {
@@ -60,69 +105,51 @@ footer li a {
     border-radius: 10px;
 }
 
-nav {
-    background-color: #1f3740;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin: 0;
-    padding: 5px 30px 8px 30px;
-    align-items: center;
-}
-
-nav a,
-nav i,
-footer .cta {
-    color: #fff;
-}
-nav ul,
-footer ul {
-    padding: 0;
-    margin: 0;
-}
-
-footer {
-    background-color: #E6E6E6;
-}
-
-footer a {
-    color: #437F90;
-    font-size: 1.2em;
-}
-
-/*nav > * {
-    display: inline-block;
-}*/
-
-nav li {
-    display: inline-block;
-    margin-right: 50px;
-}
-
-nav i {
-    margin-left: 15px;
-}
-
-/* Links */
 a {
     text-decoration: none;
 }
 
-.current {
-    color: #f2b05e;
+footer ul {
+    margin-bottom: 30px;
+}
+footer li {
+    list-style: none;
 }
 
-/* Home*/
+.footer-links {
+    display: flex;
+}
+
+.footer-links > * {
+    flex: 1;
+    flex-direction: column;
+}
+
+footer i {
+    font-size: 3em;
+    margin-right: 10px;
+}
+
+footer h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/*.current {color: #f2b05e;}*/
+
+/* Home Styles*/
 
 .cta-home {
     display: block;
     max-width: 195px;
-    text-align: center;
     color: #1f3740;
     background-color: #fff;
     border-radius: 10px;
     border: 0.195rem solid #1f3740;
     margin: 10px auto;
 }
+
+/* Home - Campaign Rain, Campaign Adventure, Super Deal*/
 
 .campaign {
     display: grid;
@@ -135,36 +162,24 @@ a {
 
 .campaign__rain {
     grid-area: rain;
-}
-.campaign__adventure {
-    grid-area: adventure;
-}
-.super-deal {
-    grid-area: super-deal;
-}
-
-.campaign__rain {
+    position: relative;
     background-image: url("../images/home/home\ -\ 1\ -\ taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
     background-position-x: left;
-}
-.campaign__adventure {
-    background-image: url("../images/home/home-2-ladyinsunset.jpg");
-    background-position-x: right;
-}
-
-.campaign__rain,
-.campaign__adventure {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
     height: 500px;
-    /*background-size: 100%;*/
-    /*position: relative;*/
 }
 
-.campaign__adventure h1,
-.campaign__adventure h2 {
-    text-align: right;
+.campaign__adventure {
+    grid-area: adventure;
+    position: relative;
+    background-image: url("../images/home/home-2-ladyinsunset.jpg");
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 500px;
 }
 
 .campaign__adventure h1,
@@ -172,7 +187,12 @@ a {
 .campaign__rain h1,
 .campaign__rain h2 {
     line-height: 110%;
-    margin: 20px 30px;
+    margin: 20px 50px;
+}
+
+.campaign__adventure h1,
+.campaign__adventure h2 {
+    text-align: right;
 }
 
 .campaign__rain h2 {
@@ -180,19 +200,22 @@ a {
 }
 
 .cta-campaign {
-    position: relative;
-    top: 35%;
-    grid-row: 1;
+    position: absolute;
+    top: 370px;
+    right: 10%;
+    left: 10%;
 }
 
 .cta-campaign .cta-home {
     max-width: 130px;
-    
 }
 
 .super-deal {
+    grid-area: super-deal;
     background-color: #f2b05e;
-    padding: 15px 0;
+    border: 1px;
+    border-color: #f2b05e;
+    box-shadow: 3px 3px 3px #0000007e;
 }
 
 .super-deal_link {
@@ -202,42 +225,55 @@ a {
 .super-deal_link h1 {
     margin: 0;
     text-align: center;
+    color: #1f3740;
+    padding: 15px 0;
 }
 
-/* Waterproof section */
+/* Home - Waterproof, Insulated and Gift-shop-sections */
 
-.waterproof, .gift-shop, .insulated {
+.waterproof,
+.gift-shop,
+.insulated {
     display: flex;
     max-width: 100%;
-    margin: 40px 0px 40px 0;
+    margin: 40px 0;
 }
 
-
-
-
-
-.waterproof img,
-.insulated img,
-.gift-shop img{
-    flex: 2;
+.waterproof__image, /*container for images*/
+.insulated__image,
+.gift-shop__image {
+    flex: 3;
     width: 100%;
-    min-width: 50%;
 }
 
-.waterproof__content,
+.waterproof img, /*images*/
+.insulated img,
+.gift-shop img {
+    flex: 3;
+    width: 100%;
+}
+
+.waterproof__content, /*container for a <div> with info and cta */
 .insulated__content,
-.gift-shop__content{
-    flex: auto;
+.gift-shop__content {
+    flex: 2;
     text-align: center;
     margin: 30px 20px;
+    display: flex;
+}
+
+.waterproof__content div,
+.insulated__content div,
+.gift-shop__content div {
+    max-width: 440px;
+    max-height: 440px;
+    margin: auto;
 }
 
 .waterproof__content h1,
 .insulated__content h1,
 .gift-shop__content h1 {
-    margin: 0;
+    margin: 0 0 50px 0;
     line-height: 110%;
     font-size: 2.5em;
 }
-
-.
