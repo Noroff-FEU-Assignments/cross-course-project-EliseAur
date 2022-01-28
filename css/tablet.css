@@ -80,19 +80,20 @@ nav i {
     text-align: center;
     color: #fff;
     margin-top: 10px;
-    padding: 4px 25px;
+    padding: 9px 25px;
     box-shadow: 3px 3px 3px #0000007e;
 }
 
 footer {
     background-color: #e6e6e6;
     padding: 50px 50px 50px 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-footer > * {
+/*footer > * {
     flex: 1;
-}
+}*/
 
 footer li a {
     font-family: "tablet-gothic-narrow";
@@ -115,25 +116,31 @@ a {
     text-decoration: none;
 }
 
-footer ul {
-    margin-bottom: 30px;
-}
+/* footer ul { */
+/* margin-bottom: 30px; */
+
 footer li {
     list-style: none;
 }
 
 .footer-links {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
 }
 
-.footer-links > * {
+/*.footer-links > * {
     flex: 1;
     flex-direction: column;
-}
+}*/
 
 footer i {
     font-size: 3em;
     margin-right: 10px;
+}
+
+footer section {
+    margin-bottom: 30px;
 }
 
 footer h3 {
@@ -152,10 +159,10 @@ h3 span {
 
 .cta-home {
     display: block;
-    max-width: 195px;
+    width: 195px;
     color: #1f3740;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 0.195rem solid #1f3740;
     margin: 10px auto;
 }
@@ -242,7 +249,6 @@ h3 span {
 .gift-shop,
 .insulated {
     display: flex;
-    max-width: 100%;
     margin: 40px 0;
     flex-direction: column;
     position: relative;
@@ -265,19 +271,18 @@ h3 span {
 .waterproof__content, /*container for a <div> with info and cta */
 .insulated__content,
 .gift-shop__content {
-    flex: 2; /*has no effect here*/
     margin: 0 5%;
     display: flex;
     position: absolute;
-    width: 90%;
+    flex-direction: column;
 }
 
-.waterproof__content div,
+/*.waterproof__content div,
 .insulated__content div,
 .gift-shop__content div {
     width: 100%;
     margin: 0 auto;
-}
+}*/
 
 .waterproof__content h2,
 .insulated__content h2,
@@ -292,3 +297,20 @@ h3 span {
 .gift-shop__content h3 {
     margin: 0 0 0 10px;
 }
+
+.cta-waterproof,
+.cta-insulated,
+.cta-gift-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 70%;
+}
+
+/*test*/
+
+/*test*/
+
+.waterproof__content div;
