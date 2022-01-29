@@ -8,32 +8,30 @@
         <title>RainyDays | Home</title>
         <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/brl5iah.css" />
-        <link href="css/tablet.css" rel="stylesheet" />
+        <link href="css/desktop-one.css" rel="stylesheet" />
     </head>
     <body>
         <header>
-            <section class="nav-top">
-                <h2 class="hidden">Logo (back to home-page) and search-field</h2>
-                <div>
-                    <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
-                </div>
-                <div>
-                    <p class="search">search-field</p>
-                </div>
-            </section>
+            <div class="header-top">
+                <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
+            </div>
+            <div class="search">
+                <label for="search-field"><i class="fas fa-search"></i></label>
+                <input type="text" name="search-field" id="search-field" value="Search products" />
+            </div>
+            <input type="checkbox" id="menu-checkbox" />
+            <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
             <nav>
-                <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Campaigns</a></li>
-                </ul>
-                <div>
-                    <i class="fas fa-user-circle"></i>
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">News</a>
+                <a href="#">Campaigns</a>
             </nav>
+            <div class="nav-icons">
+                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </header>
         <main>
             <section class="campaign">
@@ -60,20 +58,20 @@
                     <img src="images/home/home-3-claudio-schwarz-mJPMbJj4AxA-unsplash.jpg" alt="Orange rain jacket material with drops of water on it" />
                 </div>
                 <div class="waterproof__content">
-                    <h2>Conquer the rain and enjoy<span class="line-break">the great outdoors this fall</span></h2>
-                    <h3>Shop now</h3>
+                    <h2>Conquer the rain and enjoy<span class="line-break"> the great outdoors this fall</span></h2>
                 </div>
                 <div class="cta-waterproof">
+                    <h3>Shop now</h3>
                     <a href="list-of-products.html" class="cta cta-home">women waterproof</a>
                     <a href="list-of-products.html" class="cta cta-home">men waterproof</a>
                 </div>
             </section>
             <section class="insulated">
                 <div class="insulated__content">
-                    <h2>When it's cold outside..<span class="line-break">You can always count on</span><span class="line-break">our insulated jackets</span></h2>
-                    <h3>Shop now</h3>
+                    <h2>When it's cold outside..<span class="line-break"> You can always count on</span><span class="line-break">our insulated jackets</span></h2>
                 </div>
                 <div class="cta-insulated">
+                    <h3>Shop now</h3>
                     <a href="list-of-products.html" class="cta cta-home">women insulated</a>
                     <a href="list-of-products.html" class="cta cta-home">men insulated</a>
                 </div>
@@ -87,9 +85,9 @@
                 </div>
                 <div class="gift-shop__content">
                     <h2>Create memories for the future</h2>
-                    <h3>Visit our gift shop</h3>
                 </div>
                 <div class="cta-gift-shop">
+                    <h3>Visit our gift shop</h3>
                     <a href="list-of-products.html" class="cta cta-home">gift shop</a>
                 </div>
             </section>
