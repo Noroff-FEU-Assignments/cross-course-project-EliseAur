@@ -44,15 +44,16 @@ header {
     right: 50px;
     color: #1f3740;
     display: flex;
+    align-items: center;
 }
 
 .search i {
     background-color:#f2b05e ;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     padding-left: 3px;
-    padding-top: 2px;
+    padding-top: 0;
     border-radius: 7px 0 0 7px;
-    border: 0.15rem solid #f2b05e ;
+    border: 0.19rem solid #f2b05e ;
     height: 28px;
     font-size: 1.2em;
 }
@@ -394,13 +395,7 @@ footer h3 {
 /* tablet-styles */
 @media only screen and (min-width: 481) and (max-width: 1063){
 
-.large-image {
-    display: hidden;
 }
-
-
-}
-
 
 
 /* mobile-styles */ 
@@ -408,10 +403,18 @@ footer h3 {
 
 }
 
-/* desktop-one-styles */
+/* desktop-two-styles */
+
 @media only screen and (min-width:1064){
 
-.waterproof figure {
-    display: none;
+    body {
+        width: 100%;
+    }
+    main h2 {
+        font-size: 4em;
+}
+
+    main h3 {
+        font-size: 2.5em;
 }
 }
