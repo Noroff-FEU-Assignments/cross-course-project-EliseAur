@@ -37,3 +37,8 @@ font-weight: 600;
 font-style: normal;
 
 <link rel="stylesheet" href="https://use.typekit.net/brl5iah.css">
+
+/_ changes from tablet to desktop_/
+
+h2 - 3em
+h3 - 3em
