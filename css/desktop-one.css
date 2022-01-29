@@ -388,3 +388,30 @@ footer h3 {
     display: flex;
     flex-direction: column;
 }
+
+
+
+/* tablet-styles */
+@media only screen and (min-width: 481) and (max-width: 1063){
+
+.large-image {
+    display: hidden;
+}
+
+
+}
+
+
+
+/* mobile-styles */ 
+@media only screen and (max-width:480){
+
+}
+
+/* desktop-one-styles */
+@media only screen and (min-width:1064){
+
+.waterproof figure {
+    display: none;
+}
+}
