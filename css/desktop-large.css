@@ -1,4 +1,4 @@
-/* DESKTOP-large-STYLE (min-width: 1501px and max-width: 1920px)*/
+/* DESKTOP-large-STYLE (min-width: 1401px and max-width: 1920px)*/
 
 body {
     font-family: "jaf-bernino-sans-narrow";
@@ -6,8 +6,9 @@ body {
     background-color: #b6d2da;
     color: #1f3740;
     margin: 0px;
-    min-width: 1501px;
-    max-width: 1920px;
+    min-width: 1401px;
+    max-width: 1920px;;
+    
 }
 
 h2 {
@@ -343,6 +344,8 @@ footer h3 {
 .gift-shop__content h2 {
     margin: 5px 0 0 0px;
     line-height: 110%;
+    font-size:4em;
+
 }
 
 .waterproof__content .line-break {

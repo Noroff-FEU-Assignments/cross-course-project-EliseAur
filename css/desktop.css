@@ -1,4 +1,4 @@
-/* DESKTOP-small-STYLE (min-width: 1063px and max-width: 1500px)*/
+/* DESKTOP-small-STYLE (min-width: 1063px and max-width: 1400px)*/
 
 body {
     font-family: "jaf-bernino-sans-narrow";
@@ -6,7 +6,7 @@ body {
     background-color: #b6d2da;
     color: #1f3740;
     margin: 0px;
-    max-width: 1500px;
+    max-width: 1400px;
     min-width: 1063;
 }
 
