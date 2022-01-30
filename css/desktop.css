@@ -1,4 +1,4 @@
-/* DESKTOP-small-STYLE (min-width: 1113px and max-width: 1500px)*/
+/* DESKTOP-small-STYLE (min-width: 1063px and max-width: 1500px)*/
 
 body {
     font-family: "jaf-bernino-sans-narrow";
@@ -7,7 +7,7 @@ body {
     color: #1f3740;
     margin: 0px;
     max-width: 1500px;
-    min-width: 1113;
+    min-width: 1063;
 }
 
 h2 {
@@ -213,7 +213,7 @@ footer h3 {
 
 .campaign__rain {
     position: relative;
-    background-image: url("../images/home/home\ -\ 1\ -\ taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
+    background-image: url("../images/home/home-1-taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
     background-position-x: left;
     background-position-y: bottom;
     background-size: cover;
