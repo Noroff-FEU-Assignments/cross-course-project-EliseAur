@@ -1,4 +1,4 @@
-
+/* DESKTOP-large-STYLE (min-width: 1501px and max-width: 1920px)*/
 
 body {
     font-family: "jaf-bernino-sans-narrow";
@@ -6,21 +6,23 @@ body {
     background-color: #b6d2da;
     color: #1f3740;
     margin: 0px;
+    min-width: 1501px;
+    max-width: 1920px;
 }
 
-/* Fonts */
 h2 {
     font-family: "tablet-gothic-condensed";
     font-weight: 800;
-    /*font-size: 3em;*/
+    font-size: 4em;
 }
 
 h3 {
     font-family: "tablet-gothic-condensed";
     font-weight: 700;
-    /*font-size: 2em;*/
+    font-size: 3em;
     color: #1f3740;
 }
+
 
 header {
     font-family: "tablet-gothic-condensed";
@@ -39,6 +41,11 @@ header {
 
 .header-top {
     background-color: #fff;
+}
+
+.header-top_blue img,
+.header-top_blue a {
+    display: none;
 }
 
 .search {
@@ -80,27 +87,10 @@ nav a {
     margin: 10px 70px 10px 0;
 }
 
-/*tablet menu */
-
 #menu-checkbox,
 .hamburger-icon {
     display: none;
 }
-/*nav,
-#menu-checkbox {
-    display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
-}
-
-.hamburger-icon {
-    margin-left: 50px;
-    font-size: 1.1em;
-}*/
-
-/*______________________________________________________________*/
 
 .nav-icons {
     color: #fff;
@@ -130,24 +120,27 @@ footer ul {
     box-shadow: 3px 3px 3px #0000007e;
 }
 
+/*Footer*/
+
 footer {
     background-color: #e6e6e6;
-    padding: 50px 50px 50px 70px;
+    padding: 50px 80px 50px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr; 
 }
 
 footer .logo {
     margin-left: 0;
 }
+
 footer li a {
     font-family: "tablet-gothic-narrow";
     font-weight: 600;
     font-style: italic;
     color: #437f90;
-    /*font-size: 1.2em;*/
+    font-size: 1.5em;
     text-decoration: none;
-}
+} 
 
 .cta-footer {
     display: block;
@@ -168,12 +161,22 @@ footer li {
 .footer-links {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    margin-left:70px;
+}
+
+.footer-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-links section {
+    display: flex;
+    flex-direction: column;
 }
 
 footer i {
     font-size: 3em;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 footer section {
@@ -183,11 +186,12 @@ footer section {
 footer h3 {
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 2.5em;
 }
 
-/*.line-break {
+.line-break {
     display: block;
-}*/
+}
 
 /* Home Styles*/
 
@@ -285,7 +289,7 @@ footer h3 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     margin: 40px 0;
-    /*position: relative;
+    position: relative;
 }
 
 .insulated {
@@ -341,6 +345,10 @@ footer h3 {
     line-height: 110%;
 }
 
+.waterproof__content .line-break {
+    display: inline;
+}
+
 
 .cta-waterproof,
 .cta-gift-shop {
@@ -373,120 +381,4 @@ footer h3 {
     display: inline;
 }
 
-.footer-links {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
-.footer-links section {
-    display: flex;
-    flex-direction: column;
-}
-
-/* mobile-styles */ 
-@media only screen and (max-width:480px){
-
-}
-
-/* tablet-styles */
-@media only screen and (min-width: 481px) and (max-width: 1063px) {
-
-body {
-    width: 100%;
-    margin: 0 auto;
-    
-    }
-
-main h2 {
-    font-size:3em;
-    }
-
-main h3 {
-    font-size: 2em;
-    }
-
-.waterproof,
-.gift-shop,
-.insulated {
-    display: flex;
-    margin: 40px 0;
-    flex-direction: column;
-    position: relative;
-}
-
-.waterproof__image, /*container for images*/
-.insulated__image,
-.gift-shop__image {
-    flex: 3;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.waterproof__content, /*container for a <div> with info and cta */
-.insulated__content,
-.gift-shop__content {
-    margin: 0 5%;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-}
-
-
-.waterproof__content h2,
-.insulated__content h2,
-.gift-shop__content h2 {
-    margin: 5px 0 0 10px;
-    line-height: 110%;
-}
-
-.waterproof span
-.insulated span {
-    display: block;
-}
-
-.waterproof__content h3,
-.insulated__content h3,
-.gift-shop__content h3 {
-    display: none;
-}
-
-
-.cta-waterproof,
-.cta-insulated,
-.cta-gift-shop {
-    display: flex;
-    flex-direction:column;
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 40%;
-}
-
-
-
-}
-
-
-
-/* desktop-two-styles */
-@media only screen and (min-width:1501px) {
-
-main h2 {
-    font-size:4em;
-    }
-
-main h3 {
-    font-size: 2.5em;
-    }
-
-footer h3 {
-    font-size: 2em;
-}
-
-footer li a {
-    font-size: 1.5em;
-}
-
-.waterproof__content .line-break {
-    display: inline;
-}
-}

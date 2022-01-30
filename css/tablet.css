@@ -1,21 +1,25 @@
+/* TABLET-STLES (min-width 608px and max-width 1112px) */
+
 body {
     font-family: "jaf-bernino-sans-narrow";
     font-weight: 400;
     background-color: #b6d2da;
     color: #1f3740;
     margin: 0px;
+    min-width: 608px;
+    max-width: 1112px;
 }
 
 h2 {
     font-family: "tablet-gothic-condensed";
     font-weight: 800;
-    font-size: 2.7em;
+    font-size: 3em;
 }
 
 h3 {
     font-family: "tablet-gothic-condensed";
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #1f3740;
 }
 
@@ -38,26 +42,50 @@ header {
     background-color: #fff;
 }
 
+.header-top_blue img,
+.header-top_blue a {
+    display: none;
+}
+
 .search {
     position: absolute;
-    top: 10px;
+    top: 45px;
     right: 50px;
     color: #1f3740;
+    display: flex;
+    align-items: center;
 }
 
-nav {
-    background-color: #1f3740;
-    margin-left: 0;
-    display: inline-block;
+.search i {
+    background-color: #f2b05e;
+    padding-bottom: 8px;
+    padding-left: 3px;
+    padding-top: 0;
+    border-radius: 7px 0 0 7px;
+    border: 0.19rem solid #f2b05e;
+    height: 28px;
+    font-size: 1.2em;
 }
 
-nav a {
-    color: #fff;
-    margin: 10px 70px 10px 0;
+.search input {
+    padding: 4px 6px;
+    border-radius: 0 7px 7px 0;
+    border: 0.19rem solid #f2b05e;
+    width: 180px;
+    height: 28px;
 }
 
-/*tablet menu */
-/*nav,
+.hamburger-icon,
+#menu-checkbox {
+    padding-left: 50px;
+}
+
+.hamburger-icon {
+    font-size: 1.1em;
+}
+
+/*hamburger*/
+nav,
 #menu-checkbox {
     display: none;
 }
@@ -66,18 +94,43 @@ nav a {
     display: block;
 }
 
-.hamburger-icon {
-    margin-left: 50px;
-    font-size: 1.1em;
-}*/
+nav {
+    background-color: #1f3740;
+    margin-left: 0px;
+    position: absolute;
+    top: 150px;
+    color: #fff;
+}
 
-/*______________________________________________________________*/
+nav a {
+    color: #fff;
+    padding: 10px 20px 10px 0;
+    display: block;
+}
+
+@media (min-width: 800px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
+
+/*Having trouble getting the nav to pop up when clicking hamburger-icon*/
 
 .nav-icons {
     color: #fff;
     display: inline-block;
     position: absolute;
     right: 50px;
+    top: 75%;
 }
 
 footer ul {
@@ -106,6 +159,7 @@ footer {
     padding: 50px 50px 50px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 560px;
 }
 
 footer .logo {
@@ -184,7 +238,7 @@ h3 span {
     position: relative;
     background-image: url("../images/home/home\ -\ 1\ -\ taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
     background-position-x: left;
-    background-position-y: bottom;
+    background-position-y: top;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -306,4 +360,10 @@ h3 span {
     left: 10%;
     right: 10%;
     top: 70%;
+}
+
+.cta-waterproof h3,
+.cta-insulated h3,
+.cta-gift-shop h3 {
+    display: none;
 }
