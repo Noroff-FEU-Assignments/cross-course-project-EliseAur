@@ -8,43 +8,46 @@
         <title>RainyDays | Home</title>
         <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/brl5iah.css" />
-        <link media="screen and (max-width:607px)" rel="stylesheet" href="css/mobile-style.css" />
-        <link media="screen and (min-width:608px)" rel="stylesheet" href="css/tablet.css" />
-        <link media="screen and (min-width:1062px)" rel="stylesheet" href="css/desktop.css" />
-        <link media="screen and (min-width:1401px)" rel="stylesheet" href="css/desktop-large.css" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <header>
-            <div class="header-top">
-                <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
-            </div>
-            <div class="header-top_blue">
-                <a href="index.html"><img src="images/home/rainydays-logo-white.png" alt="logo and link to homepage" class="logo" /></a>
-            </div>
-            <div class="search">
-                <label for="search-field"><i class="fas fa-search"></i></label>
-                <input type="text" name="search-field" id="search-field" value="Search products" />
-            </div>
-            <div class="hamburger-container">
+            <section class="header-one">
+                <div class="logo-blue">
+                    <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
+                </div>
+                <div class="logo-white">
+                    <a href="index.html"><img src="images/home/rainydays-logo-white.png" alt="logo and link to homepage" class="logo" /></a>
+                </div>
+                <div class="search__desktop">
+                    <label for="search-field"><i class="fas fa-search"></i></label>
+                    <input type="text" name="search-field" id="search-field" value="Search products" />
+                </div>
+            </section>
+            <section class="header-two">
                 <input type="checkbox" id="menu-checkbox" />
                 <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
-            </div>
-            <nav>
-                <a href="#">Women</a>
-                <a href="#">Men</a>
-                <a href="#">News</a>
-                <a href="#">Campaigns</a>
-            </nav>
-            <div class="nav-icons">
-                <i class="fas fa-user-circle"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+                <div class="search__mobile">
+                    <label for="search-field"><i class="fas fa-search"></i></label>
+                    <input type="text" name="search-field" id="search-field" value="Search products" />
+                </div>
+                <nav>
+                    <a href="list-of-products.html">Women</a>
+                    <a href="list-of-products.html">Men</a>
+                    <a href="list-of-products.html">News</a>
+                    <a href="list-of-products.html">Campaigns</a>
+                </nav>
+                <div class="nav-icons">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </section>
         </header>
         <main>
             <section class="campaign">
                 <div class="campaign__rain">
-                    <h2>20% an all our <span class="line-break">rain coats now!</span></h2>
+                    <h2>20% on all our <span class="line-break">rain coats now!</span></h2>
                     <h3>Use the code: RAIN</h3>
                     <div class="cta-campaign">
                         <a href="list-of-products.html" class="cta cta-home">shop now</a>
@@ -62,41 +65,50 @@
                 </div>
             </section>
             <section class="waterproof">
-                <div class="waterproof__image">
-                    <img src="images/home/home-3-claudio-schwarz-mJPMbJj4AxA-unsplash.jpg" alt="Orange rain jacket material with drops of water on it" class="large-image" />
+                <div class="waterproof-image">
+                    <img src="images/home/home-3-waterproof__large.jpg" alt="Orange rain jacket material with drops of water on it" class="large-image" />
+                </div>
+                <div class="waterproof__image-small">
+                    <img src="images/home/home-3-small-claudio-schwarz-mJPMbJj4AxA-unsplash.jpg" alt="Orange rain jacket material with drops of water on it" class="small-image" />
                 </div>
                 <div class="waterproof__content">
                     <h2>Conquer the rain and enjoy<span class="line-break"> the great outdoors this fall</span></h2>
                 </div>
                 <div class="cta-waterproof">
-                    <h3>Shop now</h3>
-                    <a href="list-of-products.html" class="cta cta-home">women waterproof</a>
-                    <a href="list-of-products.html" class="cta cta-home">men waterproof</a>
+                    <h3>Waterproof</h3>
+                    <a href="list-of-products.html" class="cta cta-home cta-long">women</a>
+                    <a href="list-of-products.html" class="cta cta-home cta-long">men</a>
                 </div>
             </section>
             <section class="insulated">
+                <div class="insulated__image">
+                    <img src="images/home/home-4-insulated-large.jpg" alt="Snowboarders on their way down a mountain in powder snow with clear blue sky above." class="large-image" />
+                </div>
+                <div class="insulated__image-small">
+                    <img src="images/home/home-4-small-yann-allegre-83icOWazZZ4-unsplash.jpg" alt="Orange rain jacket material with drops of water on it" class="small-image" />
+                </div>
                 <div class="insulated__content">
-                    <h2>When it's cold outside..<span class="line-break"> You can always count on</span><span class="line-break">our insulated jackets</span></h2>
+                    <h2>When it's cold outside..<span class="line-break"> You can always count on</span><span class="line-break"> our insulated jackets</span></h2>
                 </div>
                 <div class="cta-insulated">
-                    <h3>Shop now</h3>
-                    <a href="list-of-products.html" class="cta cta-home">women insulated</a>
-                    <a href="list-of-products.html" class="cta cta-home">men insulated</a>
-                </div>
-                <div class="insulated__image">
-                    <img src="images/home/home-4-yann-allegre-83icOWazZZ4-unsplash.jpg" alt="Snowboarders on their way down a mountain in powder snow with clear blue sky above." />
+                    <h3>Insulated</h3>
+                    <a href="list-of-products.html" class="cta cta-home cta-long">women</a>
+                    <a href="list-of-products.html" class="cta cta-home cta-long">men</a>
                 </div>
             </section>
             <section class="gift-shop">
                 <div class="gift-shop__image">
-                    <img src="images/home/home-5-AdobeStock_197639775.jpg" alt="Man and woman in sporty clothing do high-five on top of mountain with view over the sea." />
+                    <img src="images/home/home-5-giftshop-large.jpg" alt="Man and woman in sporty clothing do high-five on top of mountain with view over the sea." class="large-image" />
+                </div>
+                <div class="gift-shop__image-small">
+                    <img src="images/home/home-5-small-AdobeStock_197639775.jpg" alt="Orange rain jacket material with drops of water on it" class="small-image" />
                 </div>
                 <div class="gift-shop__content">
                     <h2>Create memories for the future</h2>
                 </div>
                 <div class="cta-gift-shop">
                     <h3>Visit our gift shop</h3>
-                    <a href="list-of-products.html" class="cta cta-home">gift shop</a>
+                    <a href="list-of-products.html" class="cta cta-home cta-long">gift shop</a>
                 </div>
             </section>
         </main>
@@ -118,11 +130,13 @@
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
                 </section>
-                <section>
-                    <h3 class="follow-icons">Follow us</h3>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-instagram-square"></i>
+                <section class="follow-icons">
+                    <h3>Follow us</h3>
+                    <div>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
                 </section>
                 <section>
                     <h3>About us</h3>
