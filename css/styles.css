@@ -233,19 +233,7 @@ nav a:hover {
 }
 
 .fa-angle-left {
-    font-size: 2em;
-    color: #fff;
-    background: #1f3740;
-    padding: 2px 10px;
-    position: relative;
-    top: 55px;
-    left: 20px;
-    margin-right: 10px;
-}
-
-.fa-angle-left:hover {
-    background: #F2B05E;
-    color: #1f3740;
+    display: none;
 }
 
 .product-list-page h1 {
@@ -273,7 +261,7 @@ nav a:hover {
 
 .product-text {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 30px 35px;
     align-items: center;
     width: 148px;
@@ -325,11 +313,12 @@ nav a:hover {
     grid-row: 3;
     background:#1f3740;
     color: #fff;
-    border-radius: 8px;
-    padding: 4px 10px;
+    border-radius: 7px;
+    padding: 4px 8px;
     margin:auto;
     margin-bottom: 8px;
     width: 50px;
+    font-size: 0.9em;
 }
 
 .cta-small:hover {
