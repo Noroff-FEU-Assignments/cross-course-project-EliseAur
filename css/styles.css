@@ -4,16 +4,24 @@ body {
     background-color: #b6d2da;
     margin: 0;
     color: #1f3740;
+    max-width: 350px;
+}
+
+img {
+    width: 100%;
 }
 
 h1, h2 {
     font-family: "tablet-gothic-condensed";
     font-weight: 800;
+    font-size: 2.5em;
+
 }
 
 h3 {
     font-family: "tablet-gothic-condensed";
     font-weight: 700;
+    font-size: 1.8em;
 }
 
 a {
@@ -41,8 +49,6 @@ footer li a, .product-title, .price {
     padding: 8px 20px;
 }
 
-
-
 /* Header-styles */
 header {
     position: relative;
@@ -61,6 +67,15 @@ header {
     margin: 10px 25px;
 }
 
+.logo-blue {
+    display: none;
+}
+
+.logo-white {
+    display: flex;
+    justify-content: space-around;
+}
+
 .search {
     position: relative;
 }
@@ -73,6 +88,11 @@ header {
 
 .search__mobile label:hover {
     color:#F2B05E ;
+}
+
+.search__desktop,
+.search__mobile input {
+    display: none;
 }
 
 .header-two {
@@ -121,317 +141,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Home page - style */
-
-.cta-home {
-    background-color: #fff;
-    border: 0.195rem solid #1f3740;
-}
-
-.cta-home:hover {
-    background-color: #1f3740;
-    color:#fff;
-    border:0.1rem solid #fff;
-}
-
-.cta-long:hover {
-    border:0.1rem solid #1f3740; 
-}
-
-/* HOME - Main - CAMPAIGN - Styles */
-
-.campaign {
-    display: grid;
-}
-
-.campaign__rain {
-    position: relative;
-    background-image: url("../images/home/home-1-taneli-lahtinen-e57Hpo-Qek4-unsplash.jpg");
-    background-position-x: center;
-    background-position-y: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 500px;
-}
-
-.campaign__adventure {
-    position: relative;
-    background-image: url("../images/home/home-2-ladyinsunset.jpg");
-    background-position-x: center;
-    background-position-y: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 500px;
-}
-
-.campaign__adventure h2,
-.campaign__adventure h3,
-.campaign__rain h2,
-.campaign__rain h3 {
-        line-height: 110%;
-    }
-
-.campaign__adventure h2,
-.campaign__adventure h3 {
-    text-align: right;
-}
-
-.campaign__rain h3 {
-    margin-bottom: 55px;
-}
-
-.cta-campaign {
-    position: absolute;
-    top: 370px;
-    right: 10%;
-    left: 10%;
-}
-
-.super-deal {
-    background-color: #f2b05e;
-    border: 1px;
-    border-color: #f2b05e;
-    box-shadow: 3px 3px 3px #0000007e;
-    padding: 20px;
-}
-
-
-
-.super-deal_link h2 {
-    margin: 0;
-    text-align: center;
-    color: #1f3740;
-    padding: 20px 0;
-}
-
-.super-deal:hover {
-    background-color:#1f3740;
-    color: #fff;
-}
-
-.super-deal a h2:hover {
-    color: #fff;
-}
-
-
-/* HOME - Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
-
-.waterproof,
-.insulated,
-.gift-shop {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-/* PRODUCTS - Styles */
-
-.product-list-page {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.fa-angle-left {
-    display: none;
-}
-
-.product-list-page h1 {
-    font-size: 2.5em;
-    text-align: center; 
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 25px;
-    margin: 0 20px 20px 20px;
-}
-
-.products {
-    background: #fff;
-    border-radius: 8px;
-}
-
-.products img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
-
-.product-text {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 30px 30px 37px;
-    align-items: center;
-}
-
-.product-text > * {
-    margin: 5px;
-}
-
-.product-title {
-    font-size: 1em;
-    grid-column: -1/1;
-    margin-left: 10px;
-}
-
-.price {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 5px 10px 12px 28px;
-    font-size: 1.2em;
-    text-align: right;
-}
-
-.product-heart {
-    grid-column: 1;
-    grid-row: 3;
-    font-size: 1.5em;
-    margin-left: 10px;
-}
-
-.product-heart:hover {
-    color: #F2B05E;
-}
-
- .cta-small {
-    grid-column: 2;
-    grid-row: 3;
-    background:#1f3740;
-    color: #fff;
-    border-radius: 7px;
-    padding: 4px 8px;
-    margin-bottom: 8px;
-    width: 90px;
-    font-size: 0.9em;
-}
-
-.cta-small:hover {
-    background: #F2B05E;
-    color: #1f3740;
-}
-
-.color-box {
-    margin-left: 10px;
-}
-
-.color {
-    border-radius: 50%;
-    height: 14px;
-    width: 14px;
-    display: inline-block;
-}
-
-.yellow {
-    background: #F2B05E;
-}
-
-.green {
-    background: rgb(35, 54, 35);
-}
-
-.black {
-    background: black;
-}
-
-.blue {
-    background: #437f90;
-}
-
-.red {
-    background: red;
-}
-
-
-
-/* Footer - Styles */
-footer {
-    background-color: #e6e6e6;
-    display: grid;
-    grid-template-columns: auto;
-}
-
-footer h3 {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-footer .logo {
-    margin-left: 0;
-}
-
-footer ul {
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    list-style: none;
-}
-
-footer li a {
-    color: #437f90;
-}
-
-
-footer li a:hover {
-    color: #1f3740;
-    text-decoration: underline;
-}
-
-.footer-links {
-    display: grid;
-    margin-top: 20px;
-}
-
-footer i {
-    font-size: 3em;
-}
-
-.cta-footer {
-    background-color: #437f90;
-    color: #fff;
-}
-
-.cta-footer:hover {
-    background-color: #fff;
-    color: #437f90;
-    border: 0.15rem solid #437f90;
-}
-
-/*__________________Mobile - Styles ____________________*/
-
-body {
-    max-width: 350px;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 1.8em;
-}
-
-
-
-/* Header-styles */
-.logo-blue {
-    display: none;
-}
-
-.logo-white {
-    display: flex;
-    justify-content: space-around;
-}
-
-.search__desktop,
-.search__mobile input {
-    display: none;
-}
-
 .nav-icons i {
     margin: 5px 10px 5px 0px;
 }
@@ -453,523 +162,72 @@ nav,
 }
 
 
-
-/* Home-page - style */
-
-.cta-home {
-    margin: 10px auto;
-}
-
-
-/* Main - CAMPAIGN - Styles */
-
-.campaign {
-    grid-template-columns: 1fr;
-}
-
-.campaign__rain h2,
-.campaign__rain h3 {
-     margin-left: 25px;
-}
-
-.line-break {
-    display: block;
-}
-
-.campaign__adventure h2,
-.campaign__adventure h3 {
-    text-align: right;
-    margin-right: 25px;
-}
-
-.super-deal {
-    padding: 5px;
-}
-
-
-/* Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
-   
-.cta-long {
-    width: 170px;
-}
-
-.waterproof,
-.insulated,
-.gift-shop {
-        flex-direction: column;
-        width: 90%;
-        margin: 40px auto;     
-}
-
-.large-image {
-    display: none;
-}
-
-.waterproof__image-small,
-.insulated__image-small,
-.gift-shop__image-small {
-    width: 100%; 
-}
-
-.small-image {
-    width:100%;  
-}
-
-.waterproof__content, /*container for a <div> with info and cta */
-.insulated__content,
-.gift-shop__content {
-    margin: 0;
-    position: absolute;
-    margin: 10px 10px;
-    }
-
-.waterproof__content h2,
-.insulated__content h2,
-.gift-shop__content h2 {
-    margin: 0;
-    font-size: 2em;
-}
-
-.waterproof__content span,
-.insulated__content span,
-.gift-shop__content span {
-    display: inline block;
-}
-
-.cta-waterproof h3,
-.cta-insulated h3,
-.cta-gift-shop h3 {
-    text-align: center;
-    margin:0;
-}
-
-
-
-/* Footer - styles */
-
+/* Footer - Styles */
 footer {
+    background-color: #e6e6e6;
+    display: grid;
+    grid-template-columns: auto;
     padding: 10px 25px;
 }
 
-footer .logo {
-    width: 150px;
-}
-
 footer h3 {
+    margin-bottom: 0;
+    margin-top: 0;
     font-size: 1.45em;
 }
 
+footer .logo {
+    margin-left: 0;
+    width: 150px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
 footer li a {
+    color: #437f90;
     font-size: 1.2em;
+}
+
+footer li a:hover {
+    color: #1f3740;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: grid;
+    margin-top: 20px;
 }
 
 .footer-links section {
     margin-bottom: 20px;
 }
+
 .follow-icons {
     display: flex;
     flex-direction: column;
 }
 
-
-
-@media (min-width:320px) {
-
-    body {
-        max-width: 350px;
-    }
-    .product-list {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 8px;
-        margin-left: 8px;
-    }
-}
-@media (min-width: 351px){
-    body {
-        max-width: 412px;
-    }
-    /*HOME*/
-    .cta-waterproof,
-    .cta-insulated,
-    .cta-gift-shop {
-        position: absolute;
-        top:50%;
-        left: 10%;
-        right: 10%;
-    }
-
-    .cta-gift-shop h3 {
-        display: none;
-    }
-
-    /*PRODUCTS*/
-
+footer i {
+    font-size: 3em;
 }
 
-
-@media (min-width: 413px) {
-
-    body {
-        max-width: 600px;
-    }
-
-    .waterproof,
-    .insulated,
-    .gift-shop {
-            width: 85%;    
-    }
-    
-    .cta-waterproof,
-    .cta-insulated,
-    .cta-gift-shop {
-        position: absolute;
-        top:50%;
-        left: 10%;
-        right: 10%;
-    }
-
-    .cta-home {
-        padding: 10px 24px;
-        font-size: 1.5em;
-        border-radius: 15px;
-    }
-
-    .cta-long {
-        padding: 10px 30px;
-    }
-
-    .waterproof__content h2,
-    .insulated__content h2,
-    .gift-shop__content h2 {
-        font-size: 2.4em;
-    }
-
-    .waterproof__content span,
-    .insulated__content span,
-    .gift-shop__content span {
-        display: inline-block;
-    }
-
-    footer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-links {
-        margin-top: 10px;
-    }
-
-    .footer-links section {
-        margin-left: 10px;
-    }
-}
-/*________________Tablet - Styles_____________________________________*/
-
-@media (min-width: 601px) {
-
-    body {
-        max-width: 819px;
-    }
-
-    /* Header-styles */
-    nav {
-        display: block;
-        position: absolute;
-        background: #1f3740;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 5px 15px 5px 25px;
-    }
-
-    .logo-white {
-        display: none;
-    }
-
-    .logo-blue {
-        display: inline-block;
-    }
-
-    .logo-blue img {
-        margin: 20px 25px;
-    }
-
-    .header-one {
-        background: #fff;
-        height: 140px;
-    }
-
-    .search__mobile {
-        display: none;
-    }
-
-    .search__desktop {
-        display: inline-block;
-        position: absolute;
-        top: 60px;
-        right: 25px;
-        color: #1f3740;
-    }
-
-    .search__desktop i {
-        background-color: #f2b05e;
-        padding-bottom: 5px;
-        padding-left: 3px;
-        padding-top: 3px;
-        border-radius: 9px 0 0 9px;
-        border: 0.17rem solid #f2b05e;
-        height: 28px;
-        font-size: 2em;
-    }
-
-    .search__desktop label {
-        position: absolute;
-        left: -38px;
-    }
-
-    .search__desktop input {
-        padding: 4px 6px;
-        border-radius: 0 9px 9px 0;
-        border: 0.17rem solid #f2b05e;
-        width: 250px;
-        height: 28px;
-        font-family: "jaf-bernino-sans-narrow";
-        font-weight: 400;
-        font-size: 1.1em;
-        color: #1f3740;
-    }
-
-    /* Main - CAMPAIGN - Styles */
-
-    /* Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
-
-    .waterproof,
-    .insulated,
-    .gift-shop {
-            width: 70%;    
-    }
-
-    .waterproof__content h2,
-    .insulated__content h2,
-    .gift-shop__content h2 {
-        font-size: 3.4em;
-        line-height: 115%;
-    }
-
-    .waterproof__content span,
-    .insulated__content span {
-        display: inline;
-    }
-
-    .cta-waterproof,
-    .cta-insulated,
-    .cta-gift-shop {
-        position: absolute;
-        top:55%;
-    }
-
-    /* Footer - Styles */
-    footer {
-        padding: 50px 50px 50px 100px;
-    }
+.cta-footer {
+    background-color: #437f90;
+    color: #fff;
 }
 
-/*_________________ DESKTOP-STYLE _______________________*/
-
-@media (min-width: 820px) {
-    body {
-        max-width: 1300px;
-    }
-
-     /* Main - CAMPAIGN - Styles */
-    .campaign {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .super-deal {
-        grid-column: 1/3;
-    }
-
-    /* Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
-
-    .waterproof,
-    .insulated,
-    .gift-shop {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
-    }
-
-    .waterproof__image-small,
-    .waterproof-image,
-    .gift-shop__image-small,
-    .gift-shop__image,
-    .insulated__content,
-    .cta-insulated {
-        grid-column: 1;
-        grid-row: 1;
-        position: relative;
-    }
-
-    .waterproof__content,
-    .gift-shop__content,
-    .cta-waterproof,
-    .cta-gift-shop,
-    .insulated__image,
-    .insulated__image-small {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .cta-insulated {
-        width: 341px;
-        height: 192px;
-        margin: 10px;
-        left: 7%;
-    } 
-
-    .waterproof__content h2,
-    .insulated__content h2, 
-    .gift-shop__content h2 {
-        font-size: 3em;
-    }
-
-    .cta-gift-shop h3 {
-        display: block;
-    }
-
-    footer {
-        grid-template-columns: auto auto;
-        padding-left: 50px;
-    }
-    .footer-links {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 30px;
-    }
-
-    .follow-icons div{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
+.cta-footer:hover {
+    background-color: #fff;
+    color: #437f90;
+    border: 0.15rem solid #437f90;
 }
 
-@media (min-width: 931px) {
-    .waterproof__content,
-    .insulated__content,
-    .gift-shop__content {
-        margin: 30px;
-    }
-
-
-@media (min-width:951px) {
-    .waterproof__content h2,
-    .insulated__content h2, 
-    .gift-shop__content h2 {
-        font-size: 3.4em;
-    }
-
-    .cta-insulated {
-        left: 12%;
-    }
-}
-
-@media (min-width:1101px) {
-    .waterproof__content h2,
-    .insulated__content h2, 
-    .gift-shop__content h2 {
-        font-size: 4em;
-    }
-    
-    .cta-insulated {
-        left: 18%;
-    }
-}
-
-@media (min-width:1301px) {
- /*legge til andre bilder i waterproof, insulated og gift-shop*/
-
-    body {
-        max-width: 1500px;
-    }
-
-    nav a {
-        padding-right: 50px;
-    }
-
-    .nav-icons i {
-        padding-left: 30px;
-    }
-
-    
-    .small-image,
-    .waterproof__image-small,
-    .insulated__image-small,
-    .gift-shop__image-small {
-        display: none;
-        }
-
-    .waterproof-image,
-    .insulated__image,
-    .gift-shop__image {
-        width: 100%;
-    }
-
-    .large-image {
-        display: block;
-        width: 100%;
-    }
-
-    .waterproof,  
-    .giftshop {
-        grid-template-columns: 1.3fr 1fr;
-        
-    }
-
-    .insulated {
-        grid-template-columns: 1fr 1.3fr;
-    }
-
-    footer {
-        padding-left: 100px;
-    }
-
-}
-   
-@media (min-width:1501px){
-
-    body {
-        max-width: 100%;
-    }
-
-    .campaign__rain h2,
-    .campaign__adventure h2 {
-        font-size:3em;
-    }
-
-    .waterproof,
-    .insulated,
-    .gift-shop {
-        width: 80%;
-    }
-
-    .cta-waterproof,
-    .cta-insulated,
-    .cta-gift-shop {
-        top:60%;
-    }
-
-    footer {
-        padding-left: 200px;
-    }
-    
-}
 
 
