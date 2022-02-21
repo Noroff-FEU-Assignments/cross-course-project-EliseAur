@@ -231,16 +231,18 @@ nav a:hover {
 .product-list-page {
     max-width: 1000px;
     margin: 20px auto 60px;
+    position: relative;
     
 }
 
 .fa-angle-left {
-    font-size: 2.3em;
+    font-size: 2em;
     color: #fff;
     background: #1f3740;
     padding: 2px 10px;
     position: relative;
-    top: 60px;
+    top: 23px;
+    left: 20px;
 }
 
 .fa-angle-left:hover {
@@ -255,20 +257,24 @@ nav a:hover {
     height: 55px;
     width: 200px;
     position: relative;
-    left: 38%;
+    left: 20%;
+    top: -35px;
     
 }
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 25px;
+    margin-left: 20px;
+    position: relative;
+    top: -20px;
 }
 
 .products {
     display: grid;
     grid-template-rows: auto auto;
-    width: 270px;
+    max-width: 148px;
     background: #fff;
     border-radius: 8px;
 }
@@ -279,6 +285,7 @@ nav a:hover {
     grid-template-columns: auto 1fr;
     grid-template-rows: 40px 40px;
     align-items: center;
+    width: 185px;
 }
 
 .product-text > * {
@@ -286,7 +293,7 @@ nav a:hover {
 }
 
 .products img {
-    width: 270px;
+    width: 80%;
     border-radius: 8px 8px 0 0;
 
 }
