@@ -5,10 +5,16 @@ body {
 .picker,
 .details {
     background-color: #d4e5ea;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
     font-weight: 700;
+    font-size: 1.8em;
 }
 
 p,
@@ -17,6 +23,7 @@ span {
     font-family: jaf-bernino-sans-narrow, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.2em;
 }
 
 .strong-text {
@@ -166,14 +173,77 @@ span {
     background: #1f3740;
 }
 
-.picker {
+.picker,
+.details {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 25px;
+    grid-gap: 5px;
     margin: 15px;
 }
-.picker > * {
-    margin: 10px;
+.picker > *,
+.details > * {
+    margin: 5px 15px 5px 15px;
+}
+
+.picker div > *,
+.details div > * {
+    margin: 5px 0px;
+}
+
+.name-heart {
+    display: flex;
+    align-items: center;
+}
+
+.name-heart h2 {
+    flex: 3;
+}
+
+.name-heart i {
+    flex: 1;
+    font-size: 1.8em;
+}
+
+.name-heart i:hover {
+    color: #f2b05e;
+}
+
+.picker .size {
+    font-size: 1.2em;
+    margin: 5px 4px 5px 0;
+    padding: 2px 2px 0 2px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 0.11rem solid #1f3740;
+    border-radius: 8px;
+}
+
+.picker .size:hover {
+    background-color: #1f3740;
+    color: #fff;
+}
+
+.picker .select-color,
+.picker .cta {
+    margin: 10px 0;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+}
+
+.picker .cta {
+    background: #1f3740;
+    color: #fff;
+}
+
+.picker .cta:hover {
+    background: #fff;
+    color: #1f3740;
+    border: 0.15rem solid #1f3740;
 }
 
 /*
