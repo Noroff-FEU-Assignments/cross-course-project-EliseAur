@@ -1,4 +1,4 @@
-main {
+body {
     background-color: #a8cbd5;
 }
 
@@ -55,11 +55,8 @@ span {
 }
 
 #slides {
-    /*padding: 5px;*/
-    /*border: 3px solid #fff;*/
     margin: 5px;
     border-radius: 15px;
-    /*background: #fff;*/
     position: relative;
     z-index: 0;
 }
@@ -101,27 +98,6 @@ span {
     border-radius: 15px;
 }
 
-/*
-#slides .slide_1 {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-#slides .slide_2 {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-#slides .slide_3 {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-#slides .slide_4 {
-    max-width: 100%;
-    border-radius: 15px;
-}*/
-
 .slide-content {
     padding: 10px;
 }
@@ -158,10 +134,10 @@ span {
     display: block;
 }
 
-#slide1:checked ~ #controls label:nth-last-child(4),
-#slide2:checked ~ #controls label:nth-last-child(1),
-#slide3:checked ~ #controls label:nth-last-child(2),
-#slide4:checked ~ #controls label:nth-last-child(3) {
+#slide1:checked ~ #controls label:nth-child(4),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3) {
     background: url(../images/jacket/leftarrow-round.svg) no-repeat;
     float: left;
     margin: 0 0 0 -50px;
