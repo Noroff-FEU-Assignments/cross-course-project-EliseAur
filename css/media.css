@@ -104,6 +104,10 @@
         margin: 15px;
     }
 
+    .details {
+        margin-bottom: 40px;
+    }
+
     .detail-list {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -261,6 +265,10 @@
     .picker,
     .details {
         margin: 15px auto;
+    }
+
+    .details {
+        margin-bottom: 40px;
     }
 }
 

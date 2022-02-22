@@ -82,34 +82,3 @@
     background: #f2b05e;
     color: #1f3740;
 }
-
-.color-box {
-    margin-left: 10px;
-}
-
-.color {
-    border-radius: 50%;
-    height: 14px;
-    width: 14px;
-    display: inline-block;
-}
-
-.yellow {
-    background: #f2b05e;
-}
-
-.green {
-    background: rgb(35, 54, 35);
-}
-
-.black {
-    background: black;
-}
-
-.blue {
-    background: #437f90;
-}
-
-.red {
-    background: red;
-}
