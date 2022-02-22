@@ -50,6 +50,14 @@ footer li a, .product-title, .price {
     padding: 8px 20px;
 }
 
+.cta-normal {
+    background: #1f3740;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 1.3em;
+}
+
 /* Header-styles */
 header {
     position: relative;

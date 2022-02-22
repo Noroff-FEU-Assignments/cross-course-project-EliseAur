@@ -17,6 +17,10 @@ h2 {
     font-size: 1.8em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 p,
 ul,
 span {
@@ -202,6 +206,7 @@ span {
 .name-heart i {
     flex: 1;
     font-size: 1.8em;
+    text-align: right;
 }
 
 .name-heart i:hover {
@@ -225,8 +230,7 @@ span {
     color: #fff;
 }
 
-.picker .select-color,
-.picker .cta {
+.picker .select-color {
     margin: 10px 0;
 }
 
@@ -236,8 +240,7 @@ span {
 }
 
 .picker .cta {
-    background: #1f3740;
-    color: #fff;
+    margin: 20px 0;
 }
 
 .picker .cta:hover {
@@ -245,17 +248,3 @@ span {
     color: #1f3740;
     border: 0.15rem solid #1f3740;
 }
-
-/*
-@media 
-
-#controls {
-    display: block;
-}
-
-#bullets {
-    margin: 100px 0 0;
-}
-
-
-*/
