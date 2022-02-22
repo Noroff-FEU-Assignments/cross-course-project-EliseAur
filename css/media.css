@@ -2,7 +2,7 @@
 
 @media (min-width:317px) {
 
-    /*PRODUCTS*/
+    /*PRODUCT-LIST*/
     .product-list-page {
         max-width: 400px;
     }
@@ -93,7 +93,7 @@
         margin-left: 10px;
     }
 
-    /*PRODUCTS*/
+    /*PRODUCT-LIST*/
     .cta-small {
         width: 90px;
     }
@@ -179,7 +179,7 @@
         color: #1f3740;
     }
 
-    /* Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
+    /* Home - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
     .waterproof,
     .insulated,
     .gift-shop {
@@ -211,7 +211,6 @@
     }
 
     /*PRODUCTS-LIST*/
-    
     .product-list-page {
         max-width: 819px;
     }
@@ -233,7 +232,7 @@
         max-width: 1300px;
     }
 
-     /* Main - CAMPAIGN - Styles */
+     /* HOME - CAMPAIGN - Styles */
     .campaign {
         grid-template-columns: 1fr 1fr;
     }
@@ -242,8 +241,7 @@
         grid-column: 1/3;
     }
 
-    /* Main - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
-
+    /* HOME - WATERPROOF, INSULATED, GIFT-SHOP - Styles */
     .waterproof,
     .insulated,
     .gift-shop {
@@ -291,6 +289,7 @@
         display: block;
     }
 
+    /* Footer */
     footer {
         grid-template-columns: auto auto;
         padding-left: 50px;
@@ -305,8 +304,6 @@
         flex-direction: column;
 
     }
-
-
 }
 
 @media (min-width: 931px) {
@@ -330,6 +327,7 @@
 }
 
 @media (min-width:1101px) {
+    /* Home */
     .waterproof__content h2,
     .insulated__content h2, 
     .gift-shop__content h2 {
@@ -340,6 +338,7 @@
         left: 18%;
     }
 
+    /*PRODUCT-LIST*/
     .product-list-page {
         max-width: 1200px;
     }
@@ -349,12 +348,10 @@
 }
 
 @media (min-width:1301px) {
- /*legge til andre bilder i waterproof, insulated og gift-shop*/
-
     body {
         max-width: 1500px;
     }
-
+    /* Header- styles */
     nav a {
         padding-right: 50px;
     }
@@ -363,7 +360,7 @@
         padding-left: 30px;
     }
 
-    
+    /* Home */
     .small-image,
     .waterproof__image-small,
     .insulated__image-small,
@@ -384,26 +381,25 @@
 
     .waterproof,  
     .giftshop {
-        grid-template-columns: 1.3fr 1fr;
-        
+        grid-template-columns: 1.3fr 1fr; 
     }
 
     .insulated {
         grid-template-columns: 1fr 1.3fr;
     }
 
+    /* Footer */
     footer {
         padding-left: 100px;
     }
-
 }
    
 @media (min-width:1501px){
-
     body {
         max-width: 100%;
     }
 
+    /* Home */
     .campaign__rain h2,
     .campaign__adventure h2 {
         font-size:3em;
@@ -421,8 +417,8 @@
         top:60%;
     }
 
+    /* Footer */
     footer {
         padding-left: 200px;
-    }
-    
+    } 
 }
