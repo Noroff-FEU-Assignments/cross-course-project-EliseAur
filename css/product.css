@@ -41,7 +41,7 @@ span {
 /* Image slider / Carousel */
 #slider {
     margin: 0 auto;
-    width: 800px;
+    width: 350px;
     max-width: 100%;
     text-align: center;
 }
@@ -85,7 +85,7 @@ span {
     transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
     width: 400%;
     line-height: 0;
-    height: 200px;
+    height: 500px;
 }
 
 #slides .slide {
@@ -97,7 +97,7 @@ span {
 }
 
 #slides .slide_1 {
-    background: #000;
+    background: url(../images/products/anorak-waterproof.jpg) no-repeat;
 }
 
 #slides .slide_2 {
@@ -130,6 +130,8 @@ span {
     width: 50px;
     height: 50px;
     opacity: 0.4;
+    position: relative;
+    top: -140px;
 }
 
 #controls label:hover {
@@ -137,11 +139,43 @@ span {
 }
 
 #slide1:checked ~ #controls label:nth-child(2),
-#slide1:checked ~ #controls label:nth-child(3),
-#slide1:checked ~ #controls label:nth-child(4),
-#slide1:checked ~ #controls label:nth-child(1) {
-    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png) no-repeat;
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    background: url(../images/baseline_arrow_forward_ios_black_24dp.png) no-repeat;
     float: right;
     margin: 0 -50px 0 0;
     display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(../images/baseline_arrow_back_ios_black_24dp.png) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 100px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background: #fff;
+    border: 0.1rem solid #1f3740;
+    margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #1f3740;
 }
