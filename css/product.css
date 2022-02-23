@@ -183,6 +183,7 @@ span {
     grid-template-columns: 1fr;
     grid-gap: 5px;
     margin: 15px;
+    box-shadow: 2px 2px 3px #0000007e;
 }
 
 .picker > *,
@@ -243,12 +244,6 @@ span {
 .picker .cta {
     margin: 20px 0;
 }
-
-/*.picker .cta:hover {
-    background: #fff;
-    color: #1f3740;
-    border: 0.15rem solid #1f3740;
-}*/
 
 .details {
     margin-bottom: 40px;

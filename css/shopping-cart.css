@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
 }
+
 .cart {
     display: grid;
     max-width: 500px;
@@ -13,6 +14,7 @@ h1 {
     grid-template-columns: auto 1fr;
     background: #d4e5ea;
     border-radius: 10px;
+    box-shadow: 2px 2px 3px #0000007e;
 }
 
 .product-in-cart img {
@@ -39,6 +41,7 @@ h1 {
 .text-in-cart__one h2 {
     margin: 5px 0 3px 0;
     font-size: 1.4em;
+    font-weight: 700;
 }
 
 .text-in-cart__one p {
@@ -50,6 +53,25 @@ h1 {
     grid-column: 1;
     margin: 5px 10px;
 }
+
+#number-of-items {
+    width: 40px;
+    text-align: center;
+    border: 0.05rem solid #1f3740;
+    border-radius: 6px;
+}
+
+label,
+#number-of-items {
+    font-family: jaf-bernino-sans-narrow, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/*width: 50px;
+border-radius: 8px;
+box-shadow: 3px 3px 3px;
+text-align: center;*/
 
 .text-in-cart i {
     margin-top: 14px;
