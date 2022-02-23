@@ -2,10 +2,13 @@ h1 {
     text-align: center;
 }
 
+.shopping-cart-main {
+    margin: 0 20px;
+}
+
 .cart {
     display: grid;
     max-width: 500px;
-    margin: 0 15px 20px 15px;
     grid-gap: 15px;
 }
 
@@ -39,7 +42,7 @@ h1 {
 }
 
 .text-in-cart__one h2 {
-    margin: 5px 0 3px 0;
+    margin: 0 0 3px 0;
     font-size: 1.4em;
     font-weight: 700;
 }
@@ -90,4 +93,61 @@ text-align: center;*/
 span {
     font-size: 1em;
     font-weight: bold;
+}
+
+.summary {
+    background: #d4e5ea;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #0000007e;
+    padding: 10px;
+    margin: 20px 0;
+    max-width: 480px;
+}
+
+.summary div {
+    margin: 4px 5px;
+}
+
+.summary div h3 {
+    margin: 0;
+    border-bottom: 0.1rem solid #1f3740;
+}
+
+.delivery-cost {
+    border-bottom: 0.1rem solid #1f3740;
+}
+
+.total-price,
+.delivery-cost,
+.total-to-pay {
+    display: flex;
+}
+
+.total-price span,
+.delivery-cost span,
+.total-to-pay span {
+    flex: 1;
+}
+
+.total-price,
+.delivery-cost {
+    color: #437f90;
+}
+
+.price-text {
+    text-align: left;
+}
+
+.buttons-cart {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.check-out {
+    align-self: center;
+}
+.cta-continue {
+    align-self: center;
 }

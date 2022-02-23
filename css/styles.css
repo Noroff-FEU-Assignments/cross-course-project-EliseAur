@@ -64,6 +64,19 @@ footer li a, .product-title, .price {
     border: 0.15rem solid #1f3740;
 }
 
+.cta-continue {
+    font-size: 1em;
+    background: #437f90;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+.cta-continue:hover {
+    background-color: #fff;
+    color: #437f90;
+    border: 0.15rem solid #437f90;
+}
+
 /* Header-styles */
 header {
     position: relative;
