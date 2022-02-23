@@ -10,6 +10,7 @@ h1 {
     display: grid;
     max-width: 500px;
     grid-gap: 15px;
+    margin: 0 auto;
 }
 
 .product-in-cart {
@@ -100,12 +101,16 @@ span {
     border-radius: 10px;
     box-shadow: 2px 2px 3px #0000007e;
     padding: 10px;
-    margin: 20px 0;
+    margin: 20px auto;
     max-width: 480px;
 }
 
 .summary div {
     margin: 4px 5px;
+}
+
+.summary .buttons-cart {
+    margin-top: 20px;
 }
 
 .summary div h3 {
@@ -142,7 +147,6 @@ span {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-top: 15px;
 }
 
 .check-out {
