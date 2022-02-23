@@ -58,6 +58,12 @@ footer li a, .product-title, .price {
     font-size: 1.3em;
 }
 
+.cta-normal:hover {
+    background: #fff;
+    color: #1f3740;
+    border: 0.15rem solid #1f3740;
+}
+
 /* Header-styles */
 header {
     position: relative;
