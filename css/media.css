@@ -364,6 +364,7 @@
     footer {
         grid-template-columns: auto auto;
         padding-left: 50px;
+        padding-bottom: 150px;
     }
     .footer-links {
         grid-template-columns: 1fr 1fr 1fr 1fr;

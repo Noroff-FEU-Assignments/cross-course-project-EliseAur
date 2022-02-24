@@ -196,6 +196,7 @@ footer {
     display: grid;
     grid-template-columns: auto;
     padding: 10px 25px;
+    padding-bottom: 150px;
 }
 
 footer h3 {
