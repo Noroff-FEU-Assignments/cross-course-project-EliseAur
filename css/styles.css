@@ -289,4 +289,77 @@ footer i {
     background: red;
 }
 
+/* summary in shopping-cart and checkout */
+.price {
+    grid-column: 2;
+    margin: 0 10px 0 0;
+    text-align: right;
+    font-size: 1.35em;
+}
+
+span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.summary {
+    background: #d4e5ea;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #0000007e;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 480px;
+}
+
+.summary div {
+    margin: 4px 5px;
+}
+
+.summary .buttons-cart {
+    margin-top: 20px;
+}
+
+.summary div h3 {
+    margin: 0;
+    border-bottom: 0.1rem solid #1f3740;
+}
+
+.delivery-cost {
+    border-bottom: 0.1rem solid #1f3740;
+}
+
+.total-price,
+.delivery-cost,
+.total-to-pay {
+    display: flex;
+}
+
+.total-price span,
+.delivery-cost span,
+.total-to-pay span {
+    flex: 1;
+}
+
+.total-price,
+.delivery-cost {
+    color: #437f90;
+}
+
+.price-text {
+    text-align: left;
+}
+
+.buttons-cart {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.check-out {
+    align-self: center;
+}
+.cta-continue {
+    align-self: center;
+}
+
 
