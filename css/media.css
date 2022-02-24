@@ -13,6 +13,25 @@
     .cta-small {
         width: 60px;
     }
+
+    /*Check-out */
+    .fill-area__double {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fill-area__logo {
+        grid-template-columns: 1fr auto;
+    }
+
+    #zip-code {
+        width: 98%;
+    }
+
+    #card-number,
+    #expire-date,
+    #cvv {
+        width: 100%;
+    }
 }
 
 @media (min-width: 351px) {
@@ -382,6 +401,37 @@
         max-width: 530px;
         align-self: flex-start;
     }
+
+    /* Check-out */
+
+    .check-out-main {
+        display: grid;
+        max-width: 1100px;
+        margin: 0 15px;
+    }
+
+    form {
+        display: flex;
+        max-width: 1100px;
+    }
+
+    form > * {
+        flex: 1;
+    }
+
+    .summary__check-out {
+        margin: 0 15px 0 15px;
+        max-width: 320px;
+    }
+
+    #city {
+        width: 99%;
+    }
+
+    .check-out-main h1 {
+        text-align: left;
+        margin-left: 10px;
+    }
 }
 
 @media (min-width: 931px) {
@@ -454,6 +504,21 @@
     }
     .product-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /*Check-out*/
+    .check-out-main {
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        max-width: 1070px;
+    }
+
+    .check-out-main h1 {
+        font-size: 2.5em;
     }
 }
 

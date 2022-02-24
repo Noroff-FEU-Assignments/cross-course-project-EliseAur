@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://use.typekit.net/brl5iah.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
-        <!--<link href="css/shopping-cart.css" rel="stylesheet" />-->
         <link href="css/checkout.css" rel="stylesheet" />
         <link href="css/media.css" rel="stylesheet" />
     </head>
@@ -50,7 +49,7 @@
         </header>
         <main class="check-out-main">
             <h1>Shipping and payment</h1>
-            <form method="POST">
+            <form action="success.html" method="POST">
                 <fieldset>
                     <legend>Billing Info</legend>
                     <div class="fill-area">
@@ -117,7 +116,7 @@
                         <span class="price">$390</span>
                     </div>
                     <div class="buttons-cart">
-                        <a href="checkout.html" class="cta cta-normal check-out">Next</a>
+                        <input type="submit" value="pay now" class="cta cta-normal check-out" />
                         <a href="index.html" class="cta cta-normal cta-continue">continue shopping</a>
                     </div>
                 </section>

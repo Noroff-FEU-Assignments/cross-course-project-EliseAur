@@ -24,13 +24,13 @@ legend {
     font-size: 1.6em;
 }
 
-label {
+.check-out-main label {
     text-transform: uppercase;
     margin: 0 0 2px 2px;
     font-size: 0.8em;
 }
 
-input {
+.check-out-main input {
     margin-bottom: 10px;
     border: 0.8px solid #1f3740;
     background-color: #e6e6e6;
@@ -51,7 +51,7 @@ fieldset {
 }
 
 .fill-area__double {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
 }
 
@@ -65,7 +65,12 @@ fieldset {
 }
 
 #zip-code,
-#cvv {
+#cvv,
+#expire-date {
+    width: 50%;
+}
+
+#card-number {
     width: 98%;
 }
 
@@ -86,4 +91,13 @@ fieldset {
 .total-to-pay,
 .delivery-cost {
     font-size: 0.8em;
+}
+
+.buttons-cart input {
+    background: #1f3740;
+    border-radius: 15px;
+    padding: 12px 25px;
+    text-align: center;
+    width: 180px;
+    padding: 11.5px 10px;
 }
