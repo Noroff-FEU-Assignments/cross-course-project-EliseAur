@@ -1,8 +1,15 @@
+h1 {
+    font-size: 2em;
+}
+.check-out-main {
+    margin: 0 15px;
+}
+
 form {
     font-family: jaf-bernino-sans-narrow, sans-serif;
     background-color: #1f3740;
     color: #fff;
-    display: grid;
+    /*display: grid;*/
     max-width: 500px;
     width: 100%;
     margin: auto;
@@ -19,7 +26,7 @@ label {
 
 fieldset {
     border: 0 none;
-    max-width: 350px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
@@ -31,4 +38,18 @@ fieldset {
 .fill-area__double {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
+}
+
+.fill-area__logo {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.fill-area__logo i {
+    font-size: 3em;
+}
+
+#zip-code,
+#cvv {
+    width: 90%;
 }
