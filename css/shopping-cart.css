@@ -56,17 +56,22 @@ h1 {
     grid-row: 2;
     grid-column: 1;
     margin: 5px 10px;
+    font-family: jaf-bernino-sans-narrow, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 #number-of-items {
+}
+
+/*label,
+#number-of-items*/
+
+.number-items select {
     width: 40px;
     text-align: center;
     border: 0.05rem solid #1f3740;
     border-radius: 6px;
-}
-
-label,
-#number-of-items {
     font-family: jaf-bernino-sans-narrow, sans-serif;
     font-size: 1.1em;
     font-weight: bold;

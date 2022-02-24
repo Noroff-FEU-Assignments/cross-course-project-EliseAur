@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Rainy Days offer quality clothing for your next adventure in the wilderness" />
+        <title>RainyDays | Check Out</title>
+        <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/brl5iah.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <!--<link href="css/shopping-cart.css" rel="stylesheet" />-->
+        <link href="css/checkout.css" rel="stylesheet" />
+        <link href="css/media.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <section class="header-one">
+                <div class="logo-blue">
+                    <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
+                </div>
+                <div class="logo-white">
+                    <a href="index.html"><img src="images/home/rainydays-logo-white.png" alt="logo and link to homepage" class="logo" /></a>
+                </div>
+                <div class="search__desktop">
+                    <label for="search-field"><i class="fas fa-search"></i></label>
+                    <input type="text" name="search-field" id="search-field" value="Search products" />
+                </div>
+            </section>
+            <section class="header-two">
+                <input type="checkbox" id="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+                <div class="search__mobile">
+                    <label for="search-field"><i class="fas fa-search"></i></label>
+                    <input type="text" name="search-field" id="search-field" value="Search products" />
+                </div>
+                <nav>
+                    <a href="product-list.html">Women</a>
+                    <a href="product-list.html">Men</a>
+                    <a href="product-list.html">News</a>
+                    <a href="product-list.html">Campaigns</a>
+                </nav>
+                <div class="nav-icons">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </section>
+        </header>
+        <main class="check-out-main">
+            <h1>Shipping and payment</h1>
+            <form method="POST">
+                <fieldset>
+                    <legend>Billing Info</legend>
+                    <div class="fill-area">
+                        <label for="name">full name</label>
+                        <input type="text" id="name" name="name" placeholder="Full name" required />
+                    </div>
+                    <div class="fill-area">
+                        <label for="adress">adress</label>
+                        <input type="text" id="adress" name="adress" placeholder="Adress" required />
+                    </div>
+                    <div class="fill-area fill-area__double">
+                        <div class="fill-area__small">
+                            <label for="city">city</label>
+                            <input type="text" id="city" name="city" placeholder="City" required />
+                        </div>
+                        <div class="fill-area__small">
+                            <label for="zip-code">zip code</label>
+                            <input type="text" id="zip-code" name="zip-code" placeholder="Zip Code" required />
+                        </div>
+                    </div>
+                    <div class="fill-area">
+                        <label for="country">country</label>
+                        <input type="text" id="country" name="country" placeholder="Country" required />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Credit card info</legend>
+                    <div>
+                        <label for="card-number">card number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" maxlength="16" required />
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                    <label for="cardholder-name">cardholder name </label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="Full name" required />
+                    <div>
+                        <label for="expire-date">expire date</label>
+                        <input type="text" id="expire-date" name="expire-date" placeholder="MM/YY" maxlength="5" required />
+                        <label for="cvv">cvv</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="000" maxlength="3" required />
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <section>
+                <a href="index.html"><img src="images/home/rainydays-logo-blue.png" alt="logo and link to homepage" class="logo" /></a>
+                <div>
+                    <h3>Get our newsletter</h3>
+                    <a href="#" class="cta cta-footer">subscribe</a>
+                </div>
+            </section>
+            <section class="footer-links">
+                <section>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Returns and warranty</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </section>
+                <section class="follow-icons">
+                    <h3>Follow us</h3>
+                    <div>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </section>
+                <section>
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">About Rainy Days</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>My profile</h3>
+                    <ul>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

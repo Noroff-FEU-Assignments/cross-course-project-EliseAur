@@ -1,0 +1,34 @@
+form {
+    font-family: jaf-bernino-sans-narrow, sans-serif;
+    background-color: #1f3740;
+    color: #fff;
+    display: grid;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+legend {
+    font-family: tablet-gothic-condensed, sans-serif;
+    font-size: 1.6em;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: 0 none;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.fill-area,
+.fill-area__small {
+    display: grid;
+}
+
+.fill-area__double {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
