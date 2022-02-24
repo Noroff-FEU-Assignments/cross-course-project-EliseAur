@@ -19,6 +19,10 @@ form {
     border-radius: 10px;
 }
 
+textarea {
+    font-family: jaf-bernino-sans-narrow, sans-serif;
+}
+
 legend {
     font-family: tablet-gothic-condensed, sans-serif;
     font-size: 1.6em;
@@ -30,7 +34,8 @@ legend {
     font-size: 0.8em;
 }
 
-.check-out-main input {
+.check-out-main input,
+.contact-main textarea {
     margin-bottom: 10px;
     border: 0.8px solid #1f3740;
     background-color: #e6e6e6;
@@ -100,4 +105,17 @@ fieldset {
     text-align: center;
     width: 180px;
     padding: 11.5px 10px;
+}
+
+/*Contact us - page */
+.buttons-cart .cta-send {
+    background-color: #437f90;
+    border: none;
+    align-self: flex-start;
+}
+
+.buttons-cart .cta-send:hover {
+    background: #fff;
+    color: #437f90;
+    border: 1.5px solid #437f90;
 }

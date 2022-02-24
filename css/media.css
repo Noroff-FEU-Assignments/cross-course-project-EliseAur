@@ -294,6 +294,12 @@
     .details {
         margin-bottom: 40px;
     }
+
+    /* Check-out and Contact */
+    .check-out-main h1,
+    .contact-main h1 {
+        font-size: 2.5em;
+    }
 }
 
 /*_________________ DESKTOP-STYLE _______________________*/
@@ -429,9 +435,29 @@
         width: 99%;
     }
 
-    .check-out-main h1 {
+    .check-out-main h1,
+    .contact-main h1 {
         text-align: left;
         margin-left: 10px;
+        font-size: 2.5em;
+    }
+
+    /* Contact */
+    .contact-main {
+        max-width: 500px;
+        margin: auto;
+    }
+    .contact-main h1 {
+        text-align: left;
+        margin-left: 55px;
+    }
+
+    .contact-main form {
+        max-width: 500px;
+    }
+
+    .contact-main form fieldset {
+        max-width: 400px;
     }
 }
 
@@ -520,6 +546,11 @@
 
     .check-out-main h1 {
         font-size: 2.5em;
+    }
+
+    /* Contact */
+    .contact-main {
+        max-width: 500px;
     }
 }
 
