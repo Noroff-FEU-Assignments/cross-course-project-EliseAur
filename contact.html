@@ -13,7 +13,7 @@
         <link href="css/checkout.css" rel="stylesheet" />
         <link href="css/media.css" rel="stylesheet" />
     </head>
-    <body>
+    <body class="contact-page">
         <header>
             <section class="header-one">
                 <div class="logo-blue">
@@ -47,28 +47,30 @@
                 </div>
             </section>
         </header>
-        <main class="check-out-main contact-main">
-            <h1>Contact us</h1>
-            <form action="contact-success.html" method="POST">
-                <fieldset>
-                    <legend>Send us an e-mail</legend>
-                    <div class="fill-area">
-                        <label for="name">full name</label>
-                        <input type="text" id="name" name="name" placeholder="Full name" required />
-                    </div>
-                    <div class="fill-area">
-                        <label for="e-mail">adress</label>
-                        <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" required />
-                    </div>
-                    <div class="fill-area fill-area__text">
-                        <label for="message">message</label>
-                        <textarea id="message" name="message" rows="10" placeholder="Type something.." required></textarea>
-                    </div>
-                    <div class="buttons-cart">
-                        <input type="submit" value="send" class="cta cta-normal check-out cta-send" />
-                    </div>
-                </fieldset>
-            </form>
+        <main class="contact-main-background">
+            <section class="check-out-main contact-main">
+                <h1>Contact us</h1>
+                <form action="contact-success.html" method="POST">
+                    <fieldset>
+                        <legend>Send us an e-mail</legend>
+                        <div class="fill-area">
+                            <label for="name">full name</label>
+                            <input type="text" id="name" name="name" placeholder="Full name" required />
+                        </div>
+                        <div class="fill-area">
+                            <label for="e-mail">adress</label>
+                            <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" required />
+                        </div>
+                        <div class="fill-area fill-area__text">
+                            <label for="message">message</label>
+                            <textarea id="message" name="message" rows="10" placeholder="Type something.." required></textarea>
+                        </div>
+                        <div class="buttons-cart">
+                            <input type="submit" value="send" class="cta cta-normal check-out cta-send" />
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
         </main>
         <footer>
             <section>
