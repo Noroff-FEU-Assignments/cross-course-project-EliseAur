@@ -302,6 +302,10 @@ span {
     font-weight: bold;
 }
 
+.home-main span {
+    font-weight: 800;
+}
+
 .summary {
     background: #d4e5ea;
     border-radius: 10px;
