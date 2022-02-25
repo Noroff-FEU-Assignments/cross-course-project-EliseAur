@@ -629,3 +629,9 @@
         padding-left: 200px;
     }
 }
+
+@media (min-width: 1900px) {
+    .campaign__rain {
+        background-position-y: top;
+    }
+}
