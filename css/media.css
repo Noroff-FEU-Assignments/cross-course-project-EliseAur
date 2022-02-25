@@ -258,7 +258,7 @@
     .cta-insulated,
     .cta-gift-shop {
         position: absolute;
-        top: 55%;
+        top: 60%;
     }
 
     /* Footer - Styles */
@@ -365,6 +365,11 @@
 
     .cta-gift-shop h3 {
         display: block;
+    }
+
+    .home-news {
+        max-width: 850px;
+        margin: auto;
     }
 
     /* Footer */
@@ -499,6 +504,11 @@
 }
 
 @media (min-width: 951px) {
+    .home-news {
+        max-width: 1250px;
+        margin: auto;
+    }
+
     .waterproof__content h2,
     .insulated__content h2,
     .gift-shop__content h2 {
@@ -643,12 +653,6 @@
     .campaign__rain h2,
     .campaign__adventure h2 {
         font-size: 3em;
-    }
-
-    .waterproof,
-    .insulated,
-    .gift-shop {
-        width: 80%;
     }
 
     .cta-waterproof,
