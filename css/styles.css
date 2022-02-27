@@ -12,7 +12,7 @@ img {
 }
 
 h1, h2 {
-    font-family: "tablet-gothic-condensed";
+    font-family: "tablet-gothic-condensed", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
     font-size: 2.5em;
     margin: 20px 0;
@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 h3 {
-    font-family: "tablet-gothic-condensed";
+    font-family: "tablet-gothic-condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 1.8em;
 }
@@ -31,13 +31,13 @@ a {
 }
 
 footer li a, .product-title, .price {
-    font-family: "tablet-gothic-narrow";
+    font-family: "tablet-gothic-narrow", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-style: italic;
 }
 
 .cta {
-    font-family: "jaf-bernino-sans-condensed";
+    font-family: "jaf-bernino-sans-condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -130,7 +130,7 @@ header {
     position: relative;
     background: #1f3740;
     color: #fff;
-    font-family: tablet-gothic-condensed, sans-serif;
+    font-family: tablet-gothic-condensed, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.7em;

@@ -1,7 +1,11 @@
+/* Check-out page, Checkout-success-page, Contact-page, Message-success-page, About-page */
+
 h1 {
     font-size: 2.5em;
     text-align: center;
 }
+
+/*Check-out page */
 .check-out-main {
     margin: 0 15px;
 }
