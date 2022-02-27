@@ -22,7 +22,7 @@ h3 {
 }
 
 p,
-ul,
+.detail-list ul,
 span {
     font-family: jaf-bernino-sans-narrow, sans-serif;
     font-weight: 400;
@@ -194,6 +194,10 @@ span {
 .picker div > *,
 .details div > * {
     margin: 5px 0px;
+}
+
+.picker .price {
+    text-align: left;
 }
 
 .name-heart {

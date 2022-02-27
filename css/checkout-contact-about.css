@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
 }
 .check-out-main {
@@ -187,6 +187,7 @@ fieldset {
     padding: 10px 0;
     width: revert;
     margin: 0 20px;
+    min-width: 200px;
 }
 
 .about-box h2 {
@@ -199,7 +200,7 @@ fieldset {
 }
 
 .about-box__inner .cta {
-    margin: 30px 20px 20px 30px;
+    margin: 30px 20px 20px 20px;
     font-size: 1.1;
 }
 
@@ -226,10 +227,12 @@ fieldset {
 .checkout-success-page h1 {
     text-align: left;
     margin-left: 35px;
+    color: #122026;
 }
 
 .checksuccess-box {
     max-width: 400px;
+    min-width: 200px;
     padding: 0;
 }
 
@@ -239,4 +242,8 @@ fieldset {
 
 .checksuccsess-box__inner div {
     border-bottom: 0;
+}
+
+.checksuccsess-box__inner .cta {
+    margin-left: 20px;
 }
