@@ -223,6 +223,11 @@ fieldset {
     padding: 20px 0 40px 0;
 }
 
+.checkout-success-page h1 {
+    text-align: left;
+    margin-left: 35px;
+}
+
 .checksuccess-box {
     max-width: 400px;
     padding: 0;
