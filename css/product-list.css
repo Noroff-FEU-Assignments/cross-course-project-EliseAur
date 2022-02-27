@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 25px;
-    margin: 0 20px 20px 20px;
+    margin: 0 30px 20px 30px;
 }
 
 .products {
@@ -39,6 +39,10 @@
 
 .product-text > * {
     margin: 5px;
+}
+
+.color-box {
+    margin-left: 10px;
 }
 
 .product-title {

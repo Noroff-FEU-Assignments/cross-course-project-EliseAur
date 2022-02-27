@@ -6,8 +6,7 @@
     .product-list {
         grid-template-columns: 1fr 1fr;
         grid-gap: 8px;
-        margin: auto;
-        margin-bottom: 20px;
+        margin: 0 5px 20px 5px;
     }
 
     .cta-small {
@@ -273,7 +272,7 @@
     .product-list {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
-        margin: 0 20px 40px 20px;
+        margin: 0 30px 40px 30px;
     }
 
     .cta-small {
@@ -570,6 +569,7 @@
     }
     .product-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 40px 40px 40px;
     }
 
     /*Check-out*/
